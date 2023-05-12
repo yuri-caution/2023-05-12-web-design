@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유진건설</title>
+    <link rel="stylesheet" href="./css/a_04.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><a href="./a_04.html"><img src="./images/logo_04.png" alt="유진건설 로고"></a></div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">조직구성도</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업영역</a>
+                    <ul>
+                        <li><a href="#">전원주택</a></li>
+                        <li><a href="#">도시재생</a></li>
+                        <li><a href="#">인테리어</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">입주정보</a>
+                    <ul>
+                        <li><a href="#">입주단지</a></li>
+                        <li><a href="#">입주캘린더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">건축상담</a></li>
+                        <li><a href="#">홍보자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div><img src="./images/s4_01.jpg" alt="건설 중인 아파트 외관과 크레인 사진"></div> 
+                <div><img src="./images/s4_02.jpg" alt="건축 자재를 다루는 사진"></div> 
+                <div><img src="./images/s4_03.jpg" alt="건설현장과 사람들을 조감한 사진"></div> 
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="tab_01">
+                <h3>공지사항</h3>
+                <ul class="notice">
+                    <li><p>유진건설, 입주민 대상 ‘문화행사’ 개최</p></li>
+                    <li><p>2023년 1분기 이사회 및 위원회, 감사 활동내역 공지</p></li>
+                    <li><p>서울산업진흥원과 스타트업 발굴 및 육성위한 업무협약(MOU) 체결</p></li>
+                    <li><p>유진건설, 마곡지구에 ‘VL르웨스트’ 시니어 레지던스 견본주택 오픈</p></li>
+                </ul>
+            </div>
+            <div class="tab_02">
+                <h3>갤러리</h3>
+                <ul class="gallery">
+                    <li><a href="#"><img src="./images/g4_01.jpg" alt="설계도면과 연필과 자"></a></li>
+                    <li><a href="#"><img src="./images/g4_02.jpg" alt="건설현장에 빨간색 안전모"></a></li>
+                    <li><a href="#"><img src="./images/g4_03.jpg" alt="실측 중인 건설노동자"></a></li>
+                </ul>
+            </div>
+            <ul class="links">
+                <li><a href="#">윤리경영사이트</a></li>
+                <li><a href="#">동반성장 사이트</a></li>
+                <li><a href="#">CM사업본부 사이트</a></li>
+                <li><a href="#">파트너사 포탈</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <div class="f_menu">
+                    <a href="#">불만사항접수</a>
+                    <a href="#">안전소통센터</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+                <div class="copyright">
+                    <p>COPYRIGHT © 2023 YUGIN CONSTRUCTION ALL RIGHT RESERVED.</p>
+                </div>
+            </div>
+            <div class="famliySite">
+                <a href="#">유진기획</a>
+                <a href="#">유진상사</a>
+                <a href="#">유진재단</a>
+            </div>
+    </div>
+
+    <div id="modal">
+        <h3>입주민 대상 ‘문화행사’ 개최 안내</h3>
+        <p>불어 튼튼하며, 두기 사랑의 위하여 것이다.보라, 되려니와, 남는 칼이다. 이상이 바이며, 풍부하게 행복스럽고 갑 있는 뜨고, 그리하였는가? 보는 일월과 우는 희망의 뛰노는 내는 대고, 것은 눈이 힘있다. 용기가 따뜻한 관현악이며, 같으며, 것이다. 가장 가치를 있음으로써 작고 투명하되 산야에 힘차게 피는 아니다. 군영과 피어나기 봄날의 싹이 낙원을 이상은 것이다. 그들은 그들은 전인 구하기 주며, 목숨을 아니다. 장식하는 얼음 보이는 풍부하게 있으랴? 그들의 우리의 그들을 그들은 피다. 힘차게 아니한 미묘한 기관과 어디 꽃 거친 만천하의 듣는다. 하였으며, 싸인 가슴에 같은 위하여, 길을 스며들어 실현에 것이다.</p>
+        <a href="#">닫기</a>
+    </div>
+
+
+    <script>
+        //메뉴
+        $('.gnb').hover(function(){
+            $('.gnb ul').stop().fadeIn()
+            $('.gnb').addClass("active")
+        }, function() {
+            $('.gnb ul').stop().fadeOut('fast')
+            $('.gnb').removeClass("active")
+        })
+
+        //슬라이드
+        setInterval(function(){
+            $('.slide').animate({top : -300}, 'slow', function(){
+                $('.slide img:first').appendTo($('.slide'))
+                $('.slide').css('top', 0)
+            })
+        },2500)
+
+        //탭 전환
+        $('.tab_title h3').click(function(){
+            $('.tab_title h3.on').removeClass("on")
+            $(this).addClass("on")
+   
+            $('.tab_contents ul').css('display', 'none')
+            $('.tab_contents ul').eq($(this).index()).css('display', 'block')
+        })
+
+        //모달
+        $('.notice li p:first').click(function(){
+            $('#modal').addClass('show')
+        })
+        $('#modal a').click(function(){
+            $('#modal').removeClass('show')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {}
+
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    height: 100px;
+    padding: 0 60px;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.gnb > li:hover > a {
+    color: slateblue;
+}
+
+.gnb > li:hover > a::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: slateblue;
+    border-radius: 20px;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    z-index: 1;
+}
+
+.gnb ul li {}
+
+.gnb ul li a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+}
+
+.gnb ul li:hover a {
+    background-color: slateblue;
+    color: #ffffff;
+}
+
+
+/* slider */
+.slider {
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img {
+    display: block;
+}
+
+
+/* contents */
+.contents {
+    height: 200px;
+    display: flex;
+    padding: 10px 0;
+    gap: 6px;
+}
+
+.tab {
+    flex: 1;
+    position: relative;
+}
+
+.tab_title {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid slateblue;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tab_title h3 {
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #ddd;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tab_title h3.on {
+    background-color: slateblue;
+    color: #ffffff;
+}
+
+.tab_contents {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 130px;
+    width: 396px;
+}
+
+.tab_contents ul {
+    padding: 10px;
+}
+
+.tab_contents .notice {
+    /* display: none; */
+}
+
+.tab_contents .notice li p {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.tab_contents .notice li:hover p {
+    text-decoration: underline;
+}
+
+.tab_contents .gallery {
+    display: none;
+    padding-top: 26px;
+}
+
+.gallery li {
+    width: 32%;
+    height: 100%;
+    float: left;
+    margin-left: 6px;
+}
+
+.gallery li:first-child {
+    margin-left: 0;
+    
+}
+
+.gallery li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.banner {
+    flex: 1;
+    cursor: pointer;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.links {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.links li {
+}
+
+.links li a {
+    display: block;
+    background-color: #ddd;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.links li:hover a {
+    background-color: slateblue;
+    color: #ffffff;
+}
+
+
+/* footer */
+.footer {
+    height: 100px;
+    background-color: #ccc;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f_logo {
+    flex: 1;
+}
+
+.info {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+
+.f_menu {
+    display: flex;
+    gap: 10px;
+}
+
+.f_menu li a {
+    padding: 6px 10px;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+.f_menu li:hover a {
+    background-color: #fff;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+/* modal */
+#modal {
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#modal.show {
+    display: block;
+}
+
+#modal h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#modal p {
+    line-height: 1.7;
+}
+
+#modal a {
+    background-color: #ddd;
+    padding: 10px 16px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green복지재단</title>
+    <link rel="stylesheet" href="./css/a_02.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><a href="./a_02.html"><img src="./images/logo_02.png" alt="Green복지재단 로고"></a></div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">설립취지</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">국내후원</a></li>
+                        <li><a href="#">국외후원</a></li>
+                        <li><a href="#">맞춤후원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">자료실</a>
+                    <ul>
+                        <li><a href="#">서식자료실</a></li>
+                        <li><a href="#">사진자료실</a></li>
+                        <li><a href="#">후원양식</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">스토리</a>
+                    <ul>
+                        <li><a href="#">웹진</a></li>
+                        <li><a href="#">보고서</a></li>
+                        <li><a href="#">나의 후원</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div><img src="./images/s2_01.jpg" alt="식물과 흙을 손에 담은 사진"></div> 
+                <div><img src="./images/s2_02.jpg" alt="풍력발전기 사진"></div> 
+                <div><img src="./images/s2_03.jpg" alt="나무에 맺힌 물방울 사진"></div> 
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="tab_01">
+                <div>
+                    <h3>공지사항</h3>
+                </div>
+                <ul class="notice">
+                    <li><p>개인 제트기는 이제 그만! 암스테르담 스키폴 공항의 놀라운 결정</p></li>
+                    <li><p>HD현대건설기계, “아마존 불법 금 채굴에 동원되는 중장비 판매 중단” 결정</p></li>
+                    <li><p>UN 글로벌 해양조약, 드디어 해냈습니다!</p></li>
+                    <li><p>생분해성 플라스틱이 친환경이라는 착각</p></li>
+                </ul>
+            </div>
+            <div class="tab_02">
+                <div>
+                    <h3>갤러리</h3>
+                </div>
+                <ul class="gallery">
+                    <li><a href="#"><img src="./images/g2_01.jpg" alt="재활용쓰레기통 사진"></a></li>
+                    <li><a href="#"><img src="./images/g2_02.jpg" alt="장바구니 사진"></a></li>
+                    <li><a href="#"><img src="./images/g2_03.jpg" alt="태양광 발전판 사진"></a></li>
+                </ul>
+            </div>
+            <div class="banner">
+                <img src="./images/b2.jpg" alt="녹색 접시와 나무 식기 사진">
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="f_logo"><img src="./images/f_logo_02.png" alt="JUST 쇼핑몰 하단 로고"></div>
+            <div class="copyright">
+                <p>Copyright © 2023 Greencorp. All Rights Reserved.</p>
+            </div>
+            <ul class="links">
+                <li><a href="#">Greenpeace</a></li>
+                <li><a href="#">Green Asia</a></li>
+                <li><a href="#">UNEP</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="modal">
+        <h3>암스테르담 스키폴 공항의 개인 제트기 제한</h3>
+        <p>불어 튼튼하며, 두기 사랑의 위하여 것이다.보라, 되려니와, 남는 칼이다. 이상이 바이며, 풍부하게 행복스럽고 갑 있는 뜨고, 그리하였는가? 보는 일월과 우는 희망의 뛰노는 내는 대고, 것은 눈이 힘있다. 용기가 따뜻한 관현악이며, 같으며, 것이다. 가장 가치를 있음으로써 작고 투명하되 산야에 힘차게 피는 아니다. 군영과 피어나기 봄날의 싹이 낙원을 이상은 것이다. 그들은 그들은 전인 구하기 주며, 목숨을 아니다. 장식하는 얼음 보이는 풍부하게 있으랴? 그들의 우리의 그들을 그들은 피다. 힘차게 아니한 미묘한 기관과 어디 꽃 거친 만천하의 듣는다. 하였으며, 싸인 가슴에 같은 위하여, 길을 스며들어 실현에 것이다.</p>
+        <a href="#">닫기</a>
+    </div>
+
+
+    <script>
+        //메뉴
+        $('.gnb').hover(function(){
+            $('.gnb ul').stop().fadeIn()
+            $('.gnb').addClass('active')
+        }, function() {
+            $('.gnb ul').stop().fadeOut(100)
+            $('.gnb').removeClass('active')
+        })
+
+        //슬라이드
+        setInterval(function(){
+            $('.slide').animate({left : -1200}, 'slow', function(){
+                $('.slide img:first').appendTo($('.slide'))
+                $('.slide').css('left', 0)
+            })
+        },2500)
+
+        //탭 전환
+        $('.tab_title h3').click(function(){
+            $('.tab_title h3').removeClass('on')
+            $(this).addClass('on')
+        }, function(){
+            $('.tab_contents ul').css('display', 'none')
+            $('.tab_contents ul').eq($(this).index()).css('display', 'block')
+        })
+
+        //모달
+        $('.notice li p:first').click(function(){
+            $('#modal').addClass('show')
+        })
+        $('#modal a').click(function(){
+            $('#modal').removeClass('show')
+        })
+    </script>
+</body>
+</html>

@@ -50,7 +50,8 @@
 
         <div class="slider">
             <div class="slide">
-                <div><img src="./images/s2_01.jpg" alt="식물과 흙을 손에 담은 사진"></div> 
+                <div>
+                    <img src="./images/s2_01.jpg" alt="식물과 흙을 손에 담은 사진"></div> 
                 <div><img src="./images/s2_02.jpg" alt="풍력발전기 사진"></div> 
                 <div><img src="./images/s2_03.jpg" alt="나무에 맺힌 물방울 사진"></div> 
             </div>
@@ -125,7 +126,7 @@
         $('.tab_title h3').click(function(){
             $('.tab_title h3').removeClass('on')
             $(this).addClass('on')
-        }, function(){
+        
             $('.tab_contents ul').css('display', 'none')
             $('.tab_contents ul').eq($(this).index()).css('display', 'block')
         })

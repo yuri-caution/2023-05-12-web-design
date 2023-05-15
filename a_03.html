@@ -117,13 +117,15 @@
             $(this).find('ul').stop().fadeOut()
         })
 
-        //슬라이드
+        //슬라이드 fade 사용
+        var index = 0
+        $('.slide div').eq(index).show
         setInterval(function(){
-            $('.slide').animate({top : -300}, 'slow', function(){
-                $('.slide img:first').appendTo($('.slide'))
-                $('.slide').css('top', 0)
-            })
-        },2500)
+            nextIndex = (index + 1) % 3
+            $('.slide div').eq(index).fadeOut('slow')
+            $('.slide div').eq(nextIndex).fadeIn('slow')
+            index = nextIndex
+        }, 2700)
 
         //탭 전환
         $('.tab_title h3').click(function(){

@@ -123,6 +123,7 @@ a {
 }
 
 .slide img {
+    display: none;
     display: block;
 }
 
